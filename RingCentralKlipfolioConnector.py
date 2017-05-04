@@ -21,7 +21,7 @@ def sum_month_day(rang):
         
 
 def put_data(rang):
-    headers = {'kf-api-key': '8fcec0536acace78fd91d895fe78878c3f3c3a3d'}
+    headers = {'kf-api-key': 'KEY'}
     url = 'https://app.klipfolio.com/api/1/datasource-instances/'+rang['datasource']+'/data'
     r = requests.put(url,headers=headers, data=json.dumps(rang['data']))
 
