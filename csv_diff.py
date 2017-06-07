@@ -1,6 +1,6 @@
 import csv
-with open('/Users/ian/Desktop/PartCategorization022117.csv', 'rb') as csvfile1:
-    with open ("/Users/ian/Desktop/UpdatedPartCategorization.csv", "rb") as csvfile2:
+with open('path1', 'rb') as csvfile1:
+    with open ("path2", "rb") as csvfile2:
         reader1 = csv.reader(csvfile1)
         reader2 = csv.reader(csvfile2)
         rowsCurrent = {row[0]:row for row in reader1} #file1 row dict
